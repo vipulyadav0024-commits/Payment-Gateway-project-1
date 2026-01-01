@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Gateway UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+    <h2 id="title">UPI Payment</h2>
+
+    <div id="card">
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="text" id="upi" placeholder="Enter UPI ID">
+        <input type="number" id="amt" placeholder="Amount (₹)">
+
+        <button id="payBtn">Pay Now</button>
+    </div>
+
+    <div id="success">
+        <h3>✅ Payment Successful</h3>
+        <p id="msg"></p>
+        <button onclick="resetPay()">Pay Again</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
